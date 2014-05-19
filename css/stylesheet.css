@@ -51,7 +51,7 @@ h2 {
 	background-attachment: fixed;
 	background-position: fixed; 
 	background-size: 100%;
-	overflow:scroll;
+	overflow: hidden;
 	margin: 0;
 }
 
