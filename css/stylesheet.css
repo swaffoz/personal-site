@@ -30,6 +30,7 @@ h1 {
 	font-variant: small-caps;
 	margin: 0;
 	text-align: center;
+	text-shadow: 1px 2px 3px #666;
 }
 
 h2 {
@@ -38,6 +39,7 @@ h2 {
 	font-variant: small-caps;
   margin: 0;
 	text-align: center;
+	text-shadow: 1px 2px 3px #666;
 }
 
 #desk {
@@ -123,14 +125,6 @@ img#otter {
 }
 
 @media only screen and (max-device-width: 480px) {
-	h1 {	
-		text-shadow: 1px 0 0 rgb(34,34,34), 0 -1px 0 rgb(34,34,34), 0 1px 0 rgb(34,34,34), -1px 0 0 rgb(34,34,34);
-	}
-
-	h2 {	
-		text-shadow: 1px 0 0 rgb(34,34,34), 0 -1px 0 rgb(34,34,34), 0 1px 0 rgb(34,34,34), -1px 0 0 rgb(34,34,34);
-	}
-
 	.love {
 		font-size: 24pt;
 	}
