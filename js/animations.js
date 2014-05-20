@@ -16,6 +16,10 @@ function scrollToLinkedSection() {
 function hoverLinkTransition() {
 	imgArea = $("#" + $(this).attr("id").slice(0,-4));
 
+	if($(this).attr("id").slice(0, -5) === "msg") {
+		imgArea = $("#msg");
+	}
+
 	if ($(this).hasClass('active')) {
 		$(this).removeClass('active');
 		imgArea.removeClass('active');
@@ -23,11 +27,16 @@ function hoverLinkTransition() {
 		$(this).addClass('active');
 		imgArea.addClass('active');
 	}
+
 }
 
 
 function hoverImgTransition() {
 	textArea = $("#" + $(this).attr("id") + "Text");
+
+	if($(this).attr("id") === "msg") {
+		textArea = $(".msg");
+	}
 
 	if ($(this).hasClass('active')) {
 		$(this).removeClass('active');
