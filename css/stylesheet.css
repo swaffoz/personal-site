@@ -137,11 +137,11 @@ img#otter {
 
 	li {
 		font-size: 36pt;
-		margin: 12pt 4em 12pt 2.5em;
+		margin: 12pt 2em 12pt 1.5em;
 	}
 
-	div.sidebar {
-		margin-top: 3em;
+	div.sidebar img{
+		margin-top: 1em;
 	}
 
 	div:not(#desk) {
