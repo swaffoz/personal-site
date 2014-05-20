@@ -9,6 +9,7 @@ body {
 	margin: 0;
 	padding: 0;
 	text-rendering: optimizeLegibility
+	min-width: 680px;
 }
 
 ul {
@@ -125,6 +126,10 @@ img#otter {
 }
 
 @media only screen and (max-device-width: 480px) {
+	body {
+		min-width: 470px;
+	}
+
 	.love {
 		font-size: 24pt;
 	}
