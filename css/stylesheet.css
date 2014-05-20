@@ -123,6 +123,10 @@ img#otter {
 }
 
 @media only screen and (max-device-width: 480px) {
+	h1 {	
+		text-shadow: 1px 0 0 rgb(34,34,34), 0 -1px 0 rgb(34,34,34), 0 1px 0 rgb(34,34,34), -1px 0 0 rgb(34,34,34);
+	}
+
 	h2 {	
 		text-shadow: 1px 0 0 rgb(34,34,34), 0 -1px 0 rgb(34,34,34), 0 1px 0 rgb(34,34,34), -1px 0 0 rgb(34,34,34);
 	}
