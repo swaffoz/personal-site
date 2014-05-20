@@ -26,11 +26,10 @@ li {
 
 h1 {
 	font-size: 160pt;
-	font-weight: 200;
+	font-weight: 800;
 	font-variant: small-caps;
 	margin: 0;
 	text-align: center;
-	text-shadow: 1px 0 0 rgb(34,34,34), 0 -1px 0 rgb(34,34,34), 0 1px 0 rgb(34,34,34), -1px 0 0 rgb(34,34,34);
 }
 
 h2 {
@@ -39,7 +38,6 @@ h2 {
 	font-variant: small-caps;
   margin: 0;
 	text-align: center;
-	text-shadow: 1px 0 0 rgb(34,34,34), 0 -1px 0 rgb(34,34,34), 0 1px 0 rgb(34,34,34), -1px 0 0 rgb(34,34,34);
 }
 
 #desk {
@@ -127,5 +125,17 @@ img#otter {
 @media only screen and (max-device-width: 480px) {
 	.love {
 		font-size: 20pt;
+	}
+
+	p {
+		font-size: 32pt;
+	}
+
+	li {
+		font-size: 36pt;
+	}
+
+	div:not(#desk) {
+		width: 90%;
 	}
 }
