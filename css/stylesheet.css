@@ -124,7 +124,7 @@ img#otter {
 
 @media only screen and (max-device-width: 480px) {
 	.love {
-		font-size: 20pt;
+		font-size: 24pt;
 	}
 
 	p {
@@ -133,6 +133,11 @@ img#otter {
 
 	li {
 		font-size: 36pt;
+		margin; 6pt 3em 6pt 2em;
+	}
+
+	div.sidebar {
+		margin-top: 48pt;
 	}
 
 	div:not(#desk) {

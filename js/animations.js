@@ -35,7 +35,7 @@ function hoverImgTransition() {
 	textArea = $("#" + $(this).attr("id") + "Text");
 
 	if($(this).attr("id") === "msg") {
-		textArea = $(".msg");
+		textArea = $("#msgText1, #msgText2, #msgText3");
 	}
 
 	if ($(this).hasClass('active')) {
