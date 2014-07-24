@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
 
+button {
+	width: 80pt;
+}
+
+#puppies {
+	display: none;
+}
+
 body {
 	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
