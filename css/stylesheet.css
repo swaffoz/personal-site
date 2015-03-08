@@ -101,7 +101,7 @@ p {
 div:not(#desk).sidebar {
 	float: left;
 	width: 36pt;
-	margin: 0 24pt 0 0;
+	margin: 8pt 24pt 0 0;
 }
 
 div.sidebar img{
