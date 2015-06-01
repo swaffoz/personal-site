@@ -184,12 +184,12 @@ a h1, a:hover h1 {
 
 @media only screen and (max-width: 640px) {
   body {
-    min-width: 440px;
-    max-width: 520px;
+    min-width: 460px;
+    max-width: 560px;
   }
   
   header {
-    max-width: 440px;
+    max-width: 460px;
   }
 
   header h1 {
