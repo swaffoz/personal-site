@@ -182,26 +182,37 @@ a h1, a:hover h1 {
   }
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-device-width : 320px) 
+                   and (max-device-width : 480px) 
+                   and (min-device-width : 320px) 
+                   and (max-device-width : 568px) {
   body {
-    min-width: 460px;
-    max-width: 560px;
+    min-width: none;
+    max-width: none;
+    display: block;
   }
   
   header {
-    max-width: 460px;
+    min-width: none;
+    max-width: none;
+    display: block;
   }
 
   header h1 {
-    font-size: 64px;
+    min-width: none;
+    max-width: none;
+    display: block;
   }
   
-  header ul li {
-    font-size: 28px; 
+  header ul {
+    min-width: none;
+    max-width: none;
+    display: block;
   }
 
   p {
-    font-size: 24px;
-    max-width: 460px; 
+    min-width: none;
+    max-width: none;
+    display: block;
   }
 }
