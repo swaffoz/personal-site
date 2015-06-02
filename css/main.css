@@ -191,6 +191,7 @@ a h1, a:hover h1 {
     min-width: none;
     max-width: none;
     display: block;
+    width: 90%;
   }
   
   header {
