@@ -47,8 +47,6 @@ function typeTextInElement(text, element) {
 function addLinksToElements(elements) {
 	for (i = 0; i < elements.length; i++) {
 		$(elements[i]).attr("href", linksForTexts[$(elements[i]).attr("id")]);
-		console.log("Element is: " + $(elements[i]));
-		console.log("Element to add link to has ID: " + $(elements[i]).attr("id"));
 		if ($(elements[i]).attr("id") !== "amt" && linksForTexts[$(elements[i]).attr("id")] != undefined) {
 			$(elements[i]).attr("target","_blank");
 		}
