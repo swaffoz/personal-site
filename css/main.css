@@ -111,6 +111,9 @@ a h1, a:hover h1 {
   color: black;
 }
 
+.black {
+	color: black;
+}
 @media only screen and (max-width: 800px) {
   body {
     min-width: 580px;

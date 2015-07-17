@@ -1,11 +1,24 @@
-var typableTexts = ["Hello, I'm Zane.^200 I live\n in Kansas.^200 \nI make things with^100 <em>❤︎</em>.",
-                "I am available for hire at <a target='_blank' href='http://developedinkansas.com/'>Developed In Kansas</a>.^300 You can find my open-source work on <a target='_blank' href='https://github.com/zaneswafford'>GitHub</a>.^300 You can email me at <a href='mailto:&#122;&#097;&#110;&#101;&#064;&#111;&#116;&#116;&#101;&#114;&#115;&#046;&#105;&#111;'>zane@otters.io</a>.^300 <br><br>My recent doings:<ul><li><a target='_blank' href='http://otters.io'>otters.io</a></li><li><a target='_blank' href='https://github.com/zaneswafford/wwdc-scholarship-app-2015'>My WWDC Scholarship Application</a></li><li><a target='_blank' href='http://dave.zaneswafford.com'>Never Enough Dave</a></li><li><a target='_blank' href='http://mom.zaneswafford.com'>A Mother's Day Card</a></li></ul>",
-                "I enjoy:<ul><li>Tinkering with my tiny car</li><li>Brewing coffee</li><li>Playing with old Macs</li><li>Blogging at <a target='_blank' href='http://otters.io'>otters.io</a></li><li>Tweeting from <a target='_blank' href='https://twitter.com/ZaneSwafford'>@zaneswafford</a></li><li>Puppies</li>", 
-                "Available as a <a target='_blank' href='doc/zane-swafford-resume.docx'>Word doc</a> or <a target='_blank' href='doc/zane-swafford-resume.pdf'>PDF</a>."];
+var typableTexts = [ "Hello, I'm Zane.^100 I live\n in Kansas.^100 \nI make things with^100 <em>❤︎</em>.",
+               	 	 "I am available for hire at <a id='adik' class='black'>Developed In Kansas</a>.^100 You can find my open-source work on <a id='agh' class='black'>GitHub</a>.^100 You can email me at <a id='amt' class='black'>zane@otters.io</a>.^100 <br><br>My recent doings:<ul><li><a id='aoio' class='black'>otters.io</a></li><li><a id='awwdc' class='black'>My WWDC Scholarship App</a></li><li><a id='adave' class='black'>Never Enough Dave</a></li><li><a id='amom' class='black'>A Mother's Day Card</a></li></ul>",
+                	 "I enjoy:<ul><li>Tinkering with my tiny car</li><li>Brewing coffee</li><li>Playing with old Macs</li><li>Blogging at <a id='ablog' class='black'>otters.io</a></li><li>Tweeting from <a id='atwt' class='black'>@zaneswafford</a></li><li>Puppies</li>", 
+                	 "Available as a <a id='aresd' class='black'>Word doc</a> or <a id='aresp' class='black'>PDF</a>." ];
 
+var linksForTexts = { "adik" : "http://developedinkansas.com/",
+	 				  "agh" : "https://github.com/zaneswafford",
+					  "amt" : "mailto:zane@otters.io",
+					  "aoio" : "http://otters.io",
+					  "awwdc" : "https://github.com/zaneswafford/wwdc-scholarship-app-2015",
+					  "adave" : "http://dave.zaneswafford.com",
+					  "amom" : "http://mom.zaneswafford.com",
+					  "ablog" : "http://otters.io",
+					  "atwt" : "https://twitter.com/ZaneSwafford",
+					  "aresd" : "doc/zane-swafford-resume.docx",
+					  "aresp" : "doc/zane-swafford-resume.pdf" };
+					  
 $(document).ready(function() {
   bindEvents();
   showBody();
+  addLinksToElements($("a.black"));
 });
 
 function showBody() {
@@ -24,8 +37,24 @@ function typeTextInElement(text, element) {
     strings: [text],
     typeSpeed: 0,
     startDelay: 400,
-    showCursor: false
+    showCursor: false,
+	onStringTyped: function(curString, curStrPos) {
+		addLinksToElements($("a"));
+	}
   });
+}
+
+function addLinksToElements(elements) {
+	for (i = 0; i < elements.length; i++) {
+		$(elements[i]).attr("href", linksForTexts[$(elements[i]).attr("id")]);
+		console.log("Element is: " + $(elements[i]));
+		console.log("Element to add link to has ID: " + $(elements[i]).attr("id"));
+		if ($(elements[i]).attr("id") !== "amt" && linksForTexts[$(elements[i]).attr("id")] != undefined) {
+			$(elements[i]).attr("target","_blank");
+		}
+		
+		$(elements[i]).removeClass("black");
+	}
 }
 
 function onNavLinkClicked() {
