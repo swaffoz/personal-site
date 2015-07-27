@@ -143,3 +143,34 @@ footer {
 	position: relative;
 	top: 140px;
 }
+
+@media
+only screen and (min-device-width : 320px) and (max-device-width : 480px),
+only screen and (min-device-width : 320px) and (max-device-width : 568px), 
+only screen and (min-device-width: 375px) and (max-device-width: 667px),
+only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+	#icon {
+		width: 160px;
+	}
+	
+	#logo {
+		height: 160px;
+	}
+	
+	nav {
+		display: block;
+		float:none;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	
+	nav a {
+		padding: 12px 24px 12px 24px;
+		border-radius: 16px;
+		box-shadow: 0px 1px 6px 0px gray;
+	}
+	
+	#iphone {
+		width: 300px;
+	}
+}
