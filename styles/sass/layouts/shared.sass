@@ -1,0 +1,98 @@
+$logo-image-url: url("../../images/coffee.png")
+
+body
+	font-family: $lucida-grande
+	color: #384147
+	
+header
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 0 rgba(0, 0, 0, 0.1)
+	
+#logo 
+	+clearfix
+	+outer-container
+	
+	font-size: 16px
+	line-height: 30px
+	font-weight: 500
+	padding: 50px 0 0 15px
+	
+	>a
+		+span-columns(4)
+		float: left
+		display: block
+		color: #556d7c
+		@include background-image($logo-image-url)
+		background-size: 52px 52px
+		background-position: left center
+		background-repeat: no-repeat
+		text-decoration: none
+		padding: 12px 0 6px 72px
+		margin-bottom: 10px
+		min-width: 280px
+
+	b
+		font-size: 30px
+		font-weight: 600
+		color: #384147
+		display: block
+		min-width: 240px
+
+em	
+	background-image: linear-gradient(0deg, #518ebd 0%, #74acd1 100%)
+	color: #fff
+	font-size: 11px
+	font-weight: 700
+	font-style: normal
+	text-transform: uppercase
+	line-height: 15px
+	text-shadow: 0 -1px 0 rgba(39, 95, 137, 0.5)
+	border-radius: 3px
+	padding: 0 4px 1px 4px
+	margin-left: 2px
+	display: inline-block
+	position: relative
+	top: -2px
+	
+article
+	background: -moz-linear-gradient(90deg, white 0%, rgba(161, 188, 209, 0.7) 0%, rgba(161, 188, 209, 0) 100%), url("../../images/pattern.png") repeat center center #6189a4
+	background: -webkit-gradient(linear, left bottom, left top, from(white), from(rgba(161, 188, 209, 0.7)), to(rgba(161, 188, 209, 0))), url("../../images/pattern.png") repeat center center #6189a4
+	min-height: 40em
+	line-height: 48px
+	padding-top: 40px
+	padding-bottom: 40px
+
+	#content
+		text-align:center
+		+outer-container
+	
+	h1 
+		font-size: 28px
+		font-weight: 600
+		text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4)
+		text-align: center
+		color: #fff
+		display:block
+	p
+		color: #c5dfef
+		text-align:left
+		font-size: 22px
+
+	a
+		color: #eee
+	
+		&:hover, &:active
+			color: #ccc
+			
+.center
+	text-align: center
+
+
+footer
+	clear: both
+	padding-top: 50px
+	color: #9eb7c6
+	box-shadow: inset 0 1px 2px rgba(131, 162, 185, 0.4)
+	padding-bottom: 50px
+	background: -moz-linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0) 100%) #f1f8f9
+	background: -webkit-gradient(linear, left bottom, left top, from(white), to(rgba(255, 255, 255, 0))) #f1f8f9
+	text-align: center
