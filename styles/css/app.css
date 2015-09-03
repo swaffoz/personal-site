@@ -3199,12 +3199,12 @@ div#imageContainer {
       top: -6px;
       border-radius: 12px; }
 
-  navigation ul li.nav-link a b {
+  .navigation ul li.nav-link a b {
     line-height: 60px;
     font-weight: bold;
     font-size: 52px;
     padding: 10px; }
-  navigation ul li.nav-link a small {
+  .navigation ul li.nav-link a small {
     display: none; }
 
   article h1 {
