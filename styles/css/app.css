@@ -3227,7 +3227,7 @@ div#imageContainer {
       padding: 4em 5em 5em 5em; }
       .flex-boxes .flex-box img {
         height: 10em; }
-      .flex-boxes .flex-box h1 {
+      .flex-boxes .flex-box h1.flex-title {
         font-size: 4em; }
       .flex-boxes .flex-box p {
         line-height: 2em;
