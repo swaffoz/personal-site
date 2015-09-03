@@ -3121,6 +3121,8 @@ img.circular {
   display: inline-block;
   margin: 20px;
   shape-outside: circle();
+  -webkit-shape-outside: circle();
+  -moz-shape-outside: circle();
   box-shadow: inset 0 0 1px #444, 0 2px 3px #555;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -3175,5 +3177,60 @@ div#imageContainer {
   width: 600px;
   margin-left: auto;
   margin-right: auto; }
+
+@media only screen and (min-device-width 375px) and (max-device-width 667px), only screen and (min-device-width 414px) and (max-device-width 736px), (min-device-width 320px) and (max-device-width 568px), (min-device-width 320px) and (max-device-width 480px) {
+  #logo {
+    font-size: 52px;
+    line-height: 64px; }
+    #logo a {
+      width: 100%;
+      background-size: 102px 102px;
+      padding: 12px 0px 6px 132px;
+      margin-left: 12px; }
+    #logo b {
+      font-size: 64px; }
+    #logo em {
+      font-size: 32px;
+      line-height: 42px;
+      padding: 0 10px 4px 10px;
+      top: -6px;
+      border-radius: 12px; }
+
+  navigation ul li.nav-link b {
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 52px;
+    padding: 10px; }
+  navigation ul li.nav-link small {
+    display: none; }
+
+  article h1 {
+    font-size: 64px;
+    font-weight: bolder; }
+  article p {
+    font-size: 42px; }
+
+  .flex-boxes {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .flex-boxes .flex-box {
+      -webkit-flex: auto;
+      -moz-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
+      margin: 2.4em;
+      padding: 4em 5em 5em 5em; }
+      .flex-boxes .flex-box img {
+        height: 10em; }
+      .flex-boxes .flex-box h1 {
+        font-size: 4em; }
+      .flex-boxes .flex-box p {
+        line-height: 2em;
+        font-size: 36px; }
+
+  footer {
+    font-size: 42px; } }
 
 /*# sourceMappingURL=app.css.map */

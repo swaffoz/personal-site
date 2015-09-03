@@ -29,16 +29,9 @@
   // Mobile view
 
   .mobile-logo {
-    //display: inline;
 	display:none;
-    //float: left;
-//    max-height: $navigation-height;
-//    padding-left: $navigation-padding;
 
     img {
-      //max-height: $navigation-height;
-//      opacity: .6;
-//      padding: .8em 0;
 	  display:none;
     }
 
@@ -48,14 +41,6 @@
   }
 
   .navigation-mobile-menu {
-    //color: $navigation-color;
-//    display: block;
-//    float: right;
-//    line-height: $navigation-height;
-//    margin: 0;
-//    padding-right: $navigation-submenu-padding;
-//    text-decoration: none;
-//    text-transform: uppercase;
 	display: none;
     @include media ($horizontal-bar-mode) {
       display: none;
@@ -152,15 +137,13 @@
 	  	color: #5496c2 !important;
 	}
 
-    //@include media($horizontal-bar-mode) {
-      background: transparent;
-      display: inline;
-      line-height: $navigation-height;
+    background: transparent;
+    display: inline;
+    line-height: $navigation-height;
 
-      a {
-        padding-right: $navigation-item-padding;
-      }
-    //}
+    a {
+      padding-right: $navigation-item-padding;
+    }
   }
   
   li.logo.nav-link {
