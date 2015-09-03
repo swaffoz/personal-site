@@ -3190,21 +3190,21 @@ div#imageContainer {
       background-size: 102px 102px;
       padding: 12px 0px 6px 132px;
       margin-left: 12px; }
-      #logo a b {
-        font-size: 64px; }
-      #logo a em {
-        font-size: 32px;
-        line-height: 42px;
-        padding: 0 10px 4px 10px;
-        top: -6px;
-        border-radius: 12px; }
+    #logo b {
+      font-size: 64px; }
+    #logo em {
+      font-size: 32px;
+      line-height: 42px;
+      padding: 0 10px 4px 10px;
+      top: -6px;
+      border-radius: 12px; }
 
-  .navigation ul li.nav-link b {
+  navigation ul li.nav-link a b {
     line-height: 60px;
     font-weight: bold;
     font-size: 52px;
     padding: 10px; }
-  .navigation ul li.nav-link small {
+  navigation ul li.nav-link a small {
     display: none; }
 
   article h1 {
