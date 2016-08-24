@@ -48,6 +48,7 @@ p, ol li {
 
 h1 {
 	font-size: 53px;
+	font-weight: unset;
 	margin: 0;
 	padding: 0;
 }
