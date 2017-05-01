@@ -44,7 +44,8 @@ h1, ul li, ul li a {
 p, ol li {
 	font-family: 'neuton', Georgia, 'Times New Roman', Times, serif;
 	font-weight: normal;
-	font-size: 20px;
+	font-size: 18pt;
+  line-height: 160%;
 }
 
 h1 {
@@ -64,10 +65,10 @@ h2 {
 
 ul {
 	margin: 0;
-    padding: 0;
+  padding: 0;
 	width: 100%;
-    list-style-type: none;
-    overflow: hidden;
+  list-style-type: none;
+  overflow: hidden;
 }
 
 ol {
@@ -94,7 +95,7 @@ ul li:nth-of-type(3) {
 }
 
 ul li a {
-	font-size: 24px;
+	font-size: 18pt;
 }
 
 a {
@@ -112,14 +113,22 @@ a:hover {
 
 article {
 	display: block;
-	line-height: 170%;
 }
 
 p {
-	width: 280px;
+	width: 100%;
+	line-height: 140%;
 	display: inline-block;
 	position: relative;
 	margin-bottom: 0;
+}
+
+i.fa {
+  margin-right: -18pt;
+  position: relative;
+  left: -40pt;
+  top: 3pt;
+  color: black;
 }
 
 div {
