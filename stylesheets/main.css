@@ -148,7 +148,7 @@ h2 img {
 }
 
 /* #PRAGMA - Mobile */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
 	body {
 		width: 310px;
 		margin: 30px auto 0 auto;
@@ -157,6 +157,18 @@ h2 img {
 	h1 {
 		font-size: 41px;
 	}
+
+  article {
+    font-size: 16pt;
+    position: relative;
+    left: 16pt;
+  }
+
+  i.fa {
+    margin-right: -16pt;
+    position: relative;
+    left: -30pt;
+  }
 	
 	ul li {
 		width: initial
@@ -166,6 +178,17 @@ h2 img {
 	ul li a {
 		font-size: 20px
 	}
+}
+
+/* #PRAGMA - Tiny Mobile */
+@media (max-width: 350px) {
+  i.fa {
+    display: none;
+  }
+
+  article {
+    left: 0;
+  }
 }
 
 /* #PRAGMA - Animations */
@@ -209,4 +232,8 @@ h2 img {
 
 .fadeIn.eighth {
   animation-delay: 2.7s;
+}
+
+.fadeIn.ninth {
+  animation-delay: 3.0s;
 }
